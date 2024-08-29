@@ -19,6 +19,7 @@ NB_L2VPNS = "l2vpns"
 NB_L2VPN_TERMINATIONS = "l2vpn_terminations"
 NB_TUNNELS = "tunnels"
 NB_TUNNEL_GROUPS = "tunnel_groups"
+NB_TUNNEL_TERMINATIONS = "tunnel_terminations"
 
 
 class NetboxVpnModule(NetboxModule):
@@ -34,6 +35,7 @@ class NetboxVpnModule(NetboxModule):
         - l2vpn_terminations
         - tunnels
         - tunnel_groups
+        - tunnel_terminations
         """
         # Used to dynamically set key when returning results
         endpoint_name = ENDPOINT_NAME_MAPPING[self.endpoint]

@@ -134,6 +134,7 @@ API_APPS_ENDPOINTS = dict(
         "tunnels": {"introduced": "3.7"},
         "tunnel_groups": {"introduced": "3.7"},
         "ipsec_profiles": {"introduced": "3.7"},
+        "tunnel_terminations": {"introduced": "3.7"},
     },
 )
 
@@ -318,6 +319,7 @@ CONVERT_TO_ID = {
     "tenant_groups": "tenant_groups",
     "termination_a": "interfaces",
     "termination_b": "interfaces",
+    "tunnel": "tunnels",
     "tunnel_group": "tunnel_groups",
     "untagged_vlan": "vlans",
     "virtual_chassis": "virtual_chassis",
@@ -407,6 +409,7 @@ ENDPOINT_NAME_MAPPING = {
     "tenant_groups": "tenant_group",
     "tunnels": "tunnel",
     "tunnel_groups": "tunnel_group",
+    "tunnel_terminations": "tunnel_termination",
     "virtual_chassis": "virtual_chassis",
     "virtual_machines": "virtual_machine",
     "virtual_disks": "virtual_disk",
@@ -547,6 +550,7 @@ ALLOWED_QUERY_PARAMS = {
     "termination_b": set(["name", "device", "virtual_machine"]),
     "tunnel": set(["name"]),
     "tunnel_group": set(["slug"]),
+    "tunnel_termination": set([name]),
     "untagged_vlan": set(["group", "name", "site", "vid", "vlan_group", "tenant"]),
     "virtual_chassis": set(["name", "master"]),
     "virtual_machine": set(["name", "cluster"]),
